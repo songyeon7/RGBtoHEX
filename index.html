@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RGB to Hex</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+</head>
+<body>
+    <div class="rgbtohex">
+        <h1>Convert RGB to Hex</h1>
+        <form id="form" onsubmit="return convert();">
+            <div class="input-container">
+                <input type="number" id="r" min="0" max="255" required="" placeholder="Red"> 
+                <input type="number" id="g" min="0" max="255" required="" placeholder="Green"> 
+                <input type="number" id="b" min="0" max="255" required="" placeholder="Blue">
+            </div> <br>
+            <input id="conv" type="submit" value="Convert">
+        </form> 
+    <h1>Result</h1>
+    <div id="result">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
